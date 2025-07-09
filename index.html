@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web 工具集</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1><i class="fas fa-tools"></i> Web 工具集</h1>
+            <p>由 AI Agent 构建的高效实用小工具</p>
+        </header>
+        
+        <div class="tool-grid">
+            <!-- Tool 1: SVG Converter -->
+            <a href="svg-converter/index.html" class="tool-card">
+                <div class="card-icon svg-icon"><i class="fas fa-image"></i></div>
+                <h2>SVG 转图片</h2>
+                <p>将 SVG 矢量图代码转换为 PNG 或 JPG 格式，支持实时预览和编辑。</p>
+            </a>
+
+            <!-- Tool 2: AI Content Converter -->
+            <a href="ai-content-converter/index.html" class="tool-card">
+                <div class="card-icon ai-icon"><i class="fas fa-robot"></i></div>
+                <h2>AI 内容转换器</h2>
+                <p>将 AI 生成的 Markdown 内容实时预览并转换为 Word 文档。</p>
+            </a>
+
+            <!-- Tool 3: Markdown Converter -->
+            <a href="markdown-converter/index.html" class="tool-card">
+                <div class="card-icon markdown-icon"><i class="fab fa-markdown"></i></div>
+                <h2>Markdown 转换器</h2>
+                <p>一个简洁高效的工具，快速将 Markdown 文件转换为 Word 文档。</p>
+            </a>
+        </div>
+
+        <div class="deployment-info">
+            <h2><i class="fab fa-github"></i> GitHub Pages 部署指南</h2>
+            <ol>
+                <li>将 `web-tools-suite` 文件夹初始化为 Git 仓库并上传到 GitHub。</li>
+                <li>在 GitHub 仓库页面，进入 "Settings" -> "Pages"。</li>
+                <li>在 "Build and deployment" 下，将 Source 设置为 "Deploy from a branch"。</li>
+                <li>选择 `main` (或 `master`) 分支和 `/(root)` 文件夹，然后点击 "Save"。</li>
+                <li>等待几分钟，您的工具集就会部署在 `https://<您的用户名>.github.io/web-tools-suite/` 地址上。</li>
+            </ol>
+        </div>
+
+        <footer>
+            <p>Happy Coding!</p>
+        </footer>
+    </div>
+</body>
+</html> 

@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;700&display=swap');
+
+body {
+    font-family: 'Noto Sans SC', sans-serif;
+    background-color: #f0f4f8;
+    color: #333;
+    margin: 0;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    max-width: 1100px;
+    text-align: center;
+}
+
+header {
+    margin-bottom: 50px;
+}
+
+header h1 {
+    font-size: 3em;
+    font-weight: 700;
+    color: #2c3e50;
+}
+
+header p {
+    font-size: 1.2em;
+    color: #555;
+}
+
+.tool-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-bottom: 60px;
+}
+
+.tool-card {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 30px;
+    text-align: left;
+    text-decoration: none;
+    color: inherit;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    transition: transform 0.3s, box-shadow 0.3s;
+    border: 1px solid #e8e8e8;
+}
+
+.tool-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.card-icon {
+    font-size: 2em;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    margin-bottom: 20px;
+}
+.card-icon.svg-icon { background: #ff6b6b; } /* New Color for SVG Converter */
+.card-icon.ai-icon { background: #4a90e2; }
+.card-icon.markdown-icon { background: #50e3c2; }
+
+.tool-card h2 {
+    margin: 0 0 10px 0;
+    font-size: 1.5em;
+    color: #333;
+}
+
+.tool-card p {
+    font-size: 1em;
+    line-height: 1.6;
+    color: #666;
+}
+
+.deployment-info {
+    background: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    text-align: left;
+    border: 1px solid #e8e8e8;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+.deployment-info h2 {
+    margin-top: 0;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+    font-size: 1.6em;
+}
+
+.deployment-info ol {
+    padding-left: 20px;
+    line-height: 1.8;
+}
+
+footer {
+    margin-top: 50px;
+    color: #999;
+} 

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI 内容转换器</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1><i class="fas fa-robot"></i> AI 内容转换与增强</h1>
+            <p>粘贴 AI 生成的 Markdown 内容，实时预览并导出为 Word 文档。</p>
+        </header>
+        
+        <div class="main-content">
+            <div class="panel editor-panel">
+                <h3><i class="fab fa-markdown"></i> Markdown 输入</h3>
+                <textarea id="markdown-input" placeholder="在此处粘贴 Markdown..."></textarea>
+            </div>
+            <div class="panel preview-panel">
+                <h3><i class="fas fa-eye"></i> 实时预览</h3>
+                <div id="html-preview" class="preview-area"></div>
+            </div>
+        </div>
+
+        <div class="actions">
+            <button id="summarize-button"><i class="fas fa-wand-magic-sparkles"></i> 智能摘要 (Pro)</button>
+            <button id="word-button"><i class="fas fa-file-word"></i> 下载 Word 文档</button>
+            <button id="copy-html-button"><i class="fas fa-copy"></i> 复制 HTML</button>
+            <button id="clear-button" class="secondary"><i class="fas fa-trash"></i> 清空</button>
+        </div>
+
+        <footer>
+            <p>由 AI Agent 构建</p>
+        </footer>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/showdown/dist/showdown.min.js"></script>
+    <script src="https://unpkg.com/html-docx-js/dist/html-docx.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html> 
